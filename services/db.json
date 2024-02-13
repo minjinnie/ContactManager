@@ -1,0 +1,36 @@
+{
+  "contacts": [
+    {
+      "id": "fdd",
+      "name": "Minjin Sung",
+      "email": "minjins@byu.edu",
+      "address": "provoo",
+      "phone": "8017356893",
+      "category": "School"
+    },
+    {
+      "id": "fdd12",
+      "name": "Minjoong Kim",
+      "email": "mje@byu.edu",
+      "address": "provo",
+      "phone": "34235345125",
+      "category": "Friend"
+    },
+    {
+      "id": "fdd1342",
+      "name": "Hyun Lee",
+      "email": "hyunlee@gmail.com",
+      "address": "provo",
+      "phone": "343424155",
+      "category": "Friend"
+    },
+    {
+      "id": "fdd45345",
+      "name": "Seongwon Cho",
+      "email": "wonny@gmail.com",
+      "address": "Korea",
+      "phone": "135252464",
+      "category": "Friend"
+    }
+  ]
+}
