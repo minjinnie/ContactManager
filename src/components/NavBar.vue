@@ -2,7 +2,7 @@
     <nav class="navbar navbar-dark bg-primary navbar-expand-sm">
         <div class="container">
             <router-link to="/" class="navbar-brand">
-                <i class="fa fa-mobile"></i>Vue Contact Manager</router-link>
+                Life and Science Department Web</router-link>
         </div>
     </nav>
 </template>

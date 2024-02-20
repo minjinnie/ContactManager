@@ -10,27 +10,6 @@
                 </p>
                 <p></p>
                 <p class="fst-italic">Life and Science Department Web Developer</p>
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Search Name">
-                        </div>
-                        <div class="col">
-                            <input type="submit" class="btn btn-outline-dark">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Spinner -->
-    <div v-ir="loading">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p class="h3 text-danger fw-bold"></p>
-                </div>
             </div>
         </div>
     </div>
@@ -96,7 +75,6 @@ export default {
             this.loading = true;
             let response = await ContactService.getAllContacts();
             this.contacts = response.data;
-            this.loading = false;
         }
         catch (error){
             this.errorMessage = error;
@@ -109,10 +87,9 @@ export default {
                 this.loading = true;
                 let response = await ContactService.deleteContact(contactId);
                 if(response){
-                    this.contacts = this.contacts.filter(contact => contact.id !== contactId);
-                    // let response = await ContactService.getAllContacts();
-                    // this.contacts = response.data;
-                    // this.loading = false;
+                    let response = await ContactService.getAllContacts();
+                    this.contacts = response.data;
+                    this.loading = false;
                 }
             } catch (error) {
                 this.errorMessage = error;
